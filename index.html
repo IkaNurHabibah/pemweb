@@ -1,11 +1,168 @@
+<!--tag HTML5-->
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>IkaNurHabibah_18081010033</title>
-    </head>
-    <body>
-        <header>
-            Hellooo!
-        </header>
-    </body>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/styles.css"> <!--untuk menyambungkan file html dengan css-->
+
+     <!-- =====BOX ICONS===== -->
+
+     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+
+    <title>IkaNurHabibah_18081010033</title>  <!--judul website-->
+</head>
+
+<body>
+   <!--===== HEADER =====-->
+
+   <header class="1-header">    <!--membuat header class yang diisi dengan menu yang dapat mengarahkan ke halaman lain-->
+    <nav class="nav bd-grid">   <!--link navigasi-->
+        <div>
+            <a href="#" class="nav__logo">IkaNurHabibah<p>Biodata Singkat</p></a> <!--mengatur logo website dengan link anchor-->
+        </div>
+
+        <div class="nav__menu" id="nav-menu">   <!--div ini digunakan untuk mengelompokkan menu utama pada website
+                                                dengan menggunakan nav id yg dibuat agar dapat pindah halaman-->
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#academic" class="nav__link">Academic Resume</a></li>
+                <li class="nav__item"><a href="#hobby" class="nav__link">List Of Hobbies</a></li>
+                <li class="nav__item"><a href="#movies" class="nav__link">Movies</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+<main class="1-main"> <!--konten utama dalam dokumen-->
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home"> <!--mengelompokkan bagianbagian menu utama-->
+        <div class="home__data"> <!--mengelompokkan elemenelemen di masing2 menu utama-->
+            <h1 class="home__title">Haloo,<br>saya <span class="home__title-color">Ika</span><br> Seorang mahasiswa <br>Teknik Informatika<br></h1>
+
+        </div>
+
+        <div class="home__img">    <!--memberi gambar pada website-->
+            <img src="assets/img/profile.jpeg" alt=""> <!--yang terletak pada folder assets dengan nama profile.jpeg-->
+        </div>
+    </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section " id="about"> <!--section ini digunakan dengan maksud memudahkan dalam edit dg css-->
+        <h2 class="section-title">About</h2> <!--penggunaan tag heading dalam penempatan menu about "about yg dimaksud ini tdk mengandung nav"-->
+
+        <div class="about__container bd-grid"> <!--pengelompokan elemn2 menu dengan tag div-->
+            <div class="about__img">
+                <img src="assets/img/about.jpeg" alt="">
+            </div>
+            
+            <div>
+                <h2 class="about__subtitle">Saya Ika</h2>
+                <p class="about__text">Saat ini saya berusia 20 tahun dan <br>sedang menempuh pendidikan S1 di sebuah Universitas Negeri di Surabaya<br</p>           
+            </div>                                   
+        </div>
+    </section>
+
+    <!--===== academic resume =====-->
+    <section class="academic section" id="academic"> <!-- section class dengan id sehingga pada elemen di menu academic resume dapat dipanggil dg css-->
+        <h2 class="section-title">Academic Resume</h2>
+
+        <div class="academik__container bd-grid">          
+            <div>
+                <h2 class="academic__subtitle">Rekam Jejak Pendidikan</h2>
+                <p class="academic__text">Berikut Pendidikan yang telah saya tempuh</p>
+                <div class="academic__data">  
+                    <div class="academic__names">
+                        <span class="academic__name">SD Negeri Malasan Kulon II</span> <!--span elemen inline yg tdk dpt membentuk garis baru -->
+                    </div>
+                    <div class="academic__bar education__sd">
+
+                    </div>
+                </div>
+                <div class="academic__data">
+                    <div class="academic__names">
+                        <span class="academic__name">SMP Negeri 2 Leces</span>
+                    </div>
+                    <div class="academic_bar academic__smp">
+                        
+                    </div>
+                </div>
+                <div class="academic__data">
+                    <div class="academic__names">
+                        <span class="academic__name">SMA Negeri 1 Leces</span>
+                    </div>
+                    <div class="academic__bar academic__sma">
+                        
+                    </div>
+                </div>
+                <div class="academic__data">
+                    <div class="academic__names">
+                        
+                        <span class="academic__name">Universitas Pembangunan Nasional "Veteran" Jatim </span>
+                    </div>
+                    <div class="academic__bar academic__Kuliah">
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--===== Hobby =====-->
+    <section class="hobby section" id="hobby">
+        <h1 class="section-title">List Of Hobbies</h1>
+        <div class="hobby__names">
+        <ul>
+            <li>- Membaca buku</li> <!--membentuk list yang unorder-->
+            <li>- Jalan-jalan</li>
+            <li>- Merawat tanaman hias</li>
+        </ul>
+        </div>
+    </section>
+
+    <!--===== MOVIES =====-->
+    <section class="movies section" id="movies">
+        <h2 class="section-title">Favorite Movie</h2>
+
+        <div class="movies__container bd-grid"> <!--wadah untuk menempatkan beberapa elemen pada meu movies-->
+            <div class="movies__img">
+                <img src="assets/img/movie1.jpg" alt=""> <!--memberi gambar yang terdapat di folder assets dengan nama movie1.jpg-->
+            </div>
+            <div class="movies__img">
+                <img src="assets/img/movie2.jpg" alt="">
+            </div>
+            <div class="movies__img">
+                <img src="assets/img/movie3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+     <!--===== CONTACT =====-->
+     <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="media__social"> <!-- div class ini sengaja dibikin agar elemen menu contac dapat terkelompokkan sehingga mempermudah dalm edit css-->
+            <img src="assets/img/whatsapp.png" alt=""> <!--logo media sosial pada folder assets-->
+                <div class="keterangan WA">+6285230557313</div>
+            <img src="assets/img/instagram.png" alt="">
+                <div class="keterangan IG">@tdkdiketahui_0</div>
+        </div> 
+
+    </section>
+</main>
+
+ <!--===== FOOTER =====-->
+ <footer class="footer">
+    <p class="footer__title">Ika NH</p> <!--footer dengan nama saya-->
+    <div class="footer__social"> <!--mengelompokkan icon logo dengan link-->
+        <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+    </div>
+    <p>2020 copyright all right reserved</p> <!--copyright 2020-->
+</footer>
+
+</body>
 </html>
